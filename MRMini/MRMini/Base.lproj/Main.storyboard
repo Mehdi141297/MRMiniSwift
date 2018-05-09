@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -18,14 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2fe-8g-rsU">
-                                <rect key="frame" x="278" y="33" width="81" height="88"/>
-                                <state key="normal" image="knap0.png"/>
-                                <connections>
-                                    <action selector="settingsAction:" destination="OVP-tG-5n3" eventType="touchUpInside" id="R0x-gZ-FsN"/>
-                                    <segue destination="LAE-Os-baq" kind="show" id="UiE-K1-5kx"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ek-nd-aNQ">
                                 <rect key="frame" x="16" y="126" width="193" height="180"/>
                                 <state key="normal" image="knap1.png"/>
@@ -35,7 +26,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v0x-eF-fvG">
-                                <rect key="frame" x="197" y="252" width="162" height="162"/>
+                                <rect key="frame" x="197" y="271" width="162" height="143"/>
                                 <state key="normal" image="knap2.png"/>
                                 <connections>
                                     <action selector="infoAction:" destination="OVP-tG-5n3" eventType="touchUpInside" id="SYw-oj-iva"/>
@@ -50,21 +41,25 @@
                                     <segue destination="hP3-Ub-ZXe" kind="show" id="yFh-fz-W0j"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2fe-8g-rsU">
+                                <rect key="frame" x="240" y="39" width="119" height="119"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="knap0.png"/>
+                                <connections>
+                                    <action selector="settingsAction:" destination="OVP-tG-5n3" eventType="touchUpInside" id="R0x-gZ-FsN"/>
+                                    <segue destination="LAE-Os-baq" kind="show" id="UiE-K1-5kx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.3708304288" green="0.78845531089999998" blue="0.75102701029999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="2fe-8g-rsU" firstAttribute="leading" secondItem="gws-o1-e0p" secondAttribute="leading" constant="278" id="1N9-Es-AX7"/>
-                            <constraint firstItem="gws-o1-e0p" firstAttribute="bottom" secondItem="2fe-8g-rsU" secondAttribute="bottom" constant="546" id="3oF-bn-t9K"/>
-                            <constraint firstItem="gws-o1-e0p" firstAttribute="trailing" secondItem="2fe-8g-rsU" secondAttribute="trailing" constant="16" id="BtV-l9-OhE"/>
                             <constraint firstItem="gws-o1-e0p" firstAttribute="bottom" secondItem="4ek-nd-aNQ" secondAttribute="bottom" constant="361" id="GTu-vG-m9t"/>
                             <constraint firstItem="byy-1Z-LdT" firstAttribute="top" secondItem="4ek-nd-aNQ" secondAttribute="bottom" constant="81" id="HXW-OW-8bk"/>
                             <constraint firstItem="v0x-eF-fvG" firstAttribute="leading" secondItem="gws-o1-e0p" secondAttribute="leading" constant="197" id="Tnf-Qy-n1Y"/>
                             <constraint firstItem="gws-o1-e0p" firstAttribute="trailing" secondItem="v0x-eF-fvG" secondAttribute="trailing" constant="16" id="UsP-eP-ILx"/>
                             <constraint firstItem="byy-1Z-LdT" firstAttribute="leading" secondItem="gws-o1-e0p" secondAttribute="leading" constant="16" id="ZRv-fR-yZO"/>
-                            <constraint firstItem="v0x-eF-fvG" firstAttribute="top" secondItem="2fe-8g-rsU" secondAttribute="bottom" constant="131" id="ZiL-ZT-zM0"/>
                             <constraint firstItem="gws-o1-e0p" firstAttribute="trailing" secondItem="4ek-nd-aNQ" secondAttribute="trailing" constant="166" id="alN-dy-Pc6"/>
                             <constraint firstItem="gws-o1-e0p" firstAttribute="trailing" secondItem="byy-1Z-LdT" secondAttribute="trailing" constant="115" id="b0t-BA-tDr"/>
-                            <constraint firstItem="2fe-8g-rsU" firstAttribute="top" secondItem="gws-o1-e0p" secondAttribute="top" constant="13" id="dG2-11-Fej"/>
                             <constraint firstItem="4ek-nd-aNQ" firstAttribute="leading" secondItem="gws-o1-e0p" secondAttribute="leading" constant="16" id="eTV-3O-kji"/>
                             <constraint firstItem="4ek-nd-aNQ" firstAttribute="top" secondItem="gws-o1-e0p" secondAttribute="top" constant="106" id="iiS-hU-W1O"/>
                             <constraint firstItem="gws-o1-e0p" firstAttribute="bottom" secondItem="byy-1Z-LdT" secondAttribute="bottom" constant="43" id="s7x-xQ-TcT"/>
@@ -75,7 +70,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fFp-C0-7VR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-647.20000000000005" y="132.68365817091455"/>
+            <point key="canvasLocation" x="-1804" y="233"/>
         </scene>
         <!--Spil View Controller-->
         <scene sceneID="Jcb-Mv-r4B">
@@ -229,7 +224,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KR8-z9-T3m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-647.20000000000005" y="865.81709145427294"/>
+            <point key="canvasLocation" x="-2402" y="1014"/>
         </scene>
         <!--Scan Med App View Controller-->
         <scene sceneID="9sb-x6-3ZS">
@@ -239,19 +234,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="man0.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZfG-S6-cQq">
-                                <rect key="frame" x="35" y="60" width="304" height="587"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="man0.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZfG-S6-cQq">
+                                <rect key="frame" x="40" y="84" width="294" height="563"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8lk-I7-1Yp">
-                                <rect key="frame" x="16" y="20" width="60" height="41"/>
+                                <rect key="frame" x="16" y="35" width="60" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="tilbage.png"/>
                                 <connections>
+                                    <action selector="stopAudioAction:" destination="X4J-c0-cBN" eventType="touchUpInside" id="9fw-FF-lNy"/>
                                     <segue destination="23x-kC-Xch" kind="show" id="c86-oy-wHZ"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Try for at scanne" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="udo-LN-J7a">
-                                <rect key="frame" x="84" y="20" width="237" height="41"/>
+                                <rect key="frame" x="84" y="35" width="237" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
@@ -259,12 +256,6 @@
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="ZfG-S6-cQq" firstAttribute="leading" secondItem="p80-7U-9QW" secondAttribute="leading" constant="35" id="5ry-hR-FCo"/>
-                            <constraint firstItem="ZfG-S6-cQq" firstAttribute="top" secondItem="p80-7U-9QW" secondAttribute="top" constant="40" id="NwR-Wi-VHy"/>
-                            <constraint firstItem="p80-7U-9QW" firstAttribute="trailing" secondItem="ZfG-S6-cQq" secondAttribute="trailing" constant="36" id="Zvd-68-XgC"/>
-                            <constraint firstItem="p80-7U-9QW" firstAttribute="bottom" secondItem="ZfG-S6-cQq" secondAttribute="bottom" constant="20" id="qnA-NA-N0g"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="p80-7U-9QW"/>
                     </view>
                     <connections>
@@ -273,7 +264,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VwY-O4-AOy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-642.39999999999998" y="-1295.8020989505249"/>
+            <point key="canvasLocation" x="-894" y="-519"/>
         </scene>
         <!--Scan Menu View Controller-->
         <scene sceneID="ZfV-cc-b1h">
@@ -301,7 +292,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7iE-Ys-mNa">
-                                <rect key="frame" x="16" y="20" width="60" height="41"/>
+                                <rect key="frame" x="27" y="33" width="60" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="tilbage.png"/>
                                 <connections>
@@ -309,7 +300,7 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Scan med app eller Legetøj" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="KTS-SE-2FE">
-                                <rect key="frame" x="97" y="20" width="209" height="41"/>
+                                <rect key="frame" x="108" y="33" width="209" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.3708304288" green="0.78845531089999998" blue="0.75102701029999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -322,7 +313,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n35-IN-2GQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-647.20000000000005" y="-605.84707646176912"/>
+            <point key="canvasLocation" x="-1804" y="-519"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="C9o-dI-BkZ">
@@ -332,22 +323,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Denne app er lavet af:                                                  Mehdi Akil Al-Alak        " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="g8g-Nq-rIx">
-                                <rect key="frame" x="0.0" y="87" width="233" height="71"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.3708304288" green="0.78845531089999998" blue="0.75102701029999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="tintColor" red="0.3708304288" green="0.78845531089999998" blue="0.75102701029999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMJ-Tr-zV8">
-                                <rect key="frame" x="16" y="20" width="60" height="41"/>
+                                <rect key="frame" x="16" y="38" width="60" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="tilbage.png"/>
                                 <connections>
                                     <segue destination="OVP-tG-5n3" kind="show" id="epi-bV-1Ys"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Denne app er lavet af:                                                  Mehdi Akil Al-Alak        " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="g8g-Nq-rIx">
+                                <rect key="frame" x="0.0" y="100" width="233" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.3708304288" green="0.78845531089999998" blue="0.75102701029999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.3708304288" green="0.78845531089999998" blue="0.75102701029999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.3708304288" green="0.78845531089999998" blue="0.75102701029999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="tmb-kL-9In"/>
@@ -355,7 +346,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KiK-i4-9uE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="437.60000000000002" y="-225.33733133433284"/>
+            <point key="canvasLocation" x="-650" y="233"/>
         </scene>
         <!--Info View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -365,30 +356,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XeD-Iq-S3k">
-                                <rect key="frame" x="0.0" y="55" width="375" height="612"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <wkWebViewConfiguration key="configuration">
-                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                    <wkPreferences key="preferences"/>
-                                </wkWebViewConfiguration>
-                            </wkWebView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oS3-Im-jhl">
-                                <rect key="frame" x="16" y="6" width="60" height="41"/>
+                                <rect key="frame" x="16" y="20" width="60" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="tilbage.png"/>
                                 <connections>
                                     <segue destination="OVP-tG-5n3" kind="show" id="7CU-wD-cn0"/>
                                 </connections>
                             </button>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XeD-Iq-S3k">
+                                <rect key="frame" x="0.0" y="69" width="375" height="590"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="XeD-Iq-S3k" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="JA3-dY-sFg"/>
-                            <constraint firstItem="XeD-Iq-S3k" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="evo-T1-nW2"/>
-                            <constraint firstItem="XeD-Iq-S3k" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="jw7-6O-4oL"/>
-                            <constraint firstItem="XeD-Iq-S3k" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="xrM-dI-Qx0"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
@@ -397,7 +383,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="437.60000000000002" y="493.40329835082463"/>
+            <point key="canvasLocation" x="-1049" y="1013"/>
         </scene>
     </scenes>
     <resources>
@@ -421,7 +407,7 @@
         <image name="tilbage.png" width="720" height="720"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="xD1-Bi-sIZ"/>
-        <segue reference="OzB-Oz-8NU"/>
+        <segue reference="c86-oy-wHZ"/>
+        <segue reference="7CU-wD-cn0"/>
     </inferredMetricsTieBreakers>
 </document>

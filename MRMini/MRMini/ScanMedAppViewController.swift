@@ -37,6 +37,13 @@ class ScanMedAppViewController: UIViewController {
         audioPlayer.play()
         
     }
+    
+    @IBAction func stopAudioAction(_ sender: UIButton) {
+        
+        audioPlayer.stop()
+    }
+    
+    
     @objc func tapGesture(){
         
         if manImage.image == UIImage(named:  "man0") {
