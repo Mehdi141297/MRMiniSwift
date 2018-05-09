@@ -10,51 +10,384 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Menu View Controller-->
         <scene sceneID="YuJ-VQ-0a4">
             <objects>
-                <viewController id="OVP-tG-5n3" sceneMemberID="viewController">
+                <viewController id="OVP-tG-5n3" customClass="MenuViewController" customModule="MRMini" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lsx-9s-DEp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pPk-5E-dcs">
-                                <rect key="frame" x="226" y="295" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2fe-8g-rsU">
+                                <rect key="frame" x="278" y="33" width="81" height="88"/>
+                                <state key="normal" image="knap0.png"/>
+                                <connections>
+                                    <action selector="settingsAction:" destination="OVP-tG-5n3" eventType="touchUpInside" id="R0x-gZ-FsN"/>
+                                    <segue destination="LAE-Os-baq" kind="show" id="UiE-K1-5kx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ek-nd-aNQ">
+                                <rect key="frame" x="16" y="126" width="193" height="180"/>
+                                <state key="normal" image="knap1.png"/>
+                                <connections>
+                                    <action selector="scanAction:" destination="OVP-tG-5n3" eventType="touchUpInside" id="6xr-OA-fVk"/>
+                                    <segue destination="23x-kC-Xch" kind="show" id="xD1-Bi-sIZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v0x-eF-fvG">
+                                <rect key="frame" x="197" y="252" width="162" height="162"/>
+                                <state key="normal" image="knap2.png"/>
+                                <connections>
+                                    <action selector="infoAction:" destination="OVP-tG-5n3" eventType="touchUpInside" id="SYw-oj-iva"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="PUY-Jv-wKI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="byy-1Z-LdT">
+                                <rect key="frame" x="16" y="387" width="244" height="237"/>
+                                <state key="normal" image="knap3.png"/>
+                                <connections>
+                                    <action selector="gameAction:" destination="OVP-tG-5n3" eventType="touchUpInside" id="qhF-ro-5al"/>
+                                    <segue destination="hP3-Ub-ZXe" kind="show" id="yFh-fz-W0j"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.3708304288" green="0.78845531089999998" blue="0.75102701029999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="2fe-8g-rsU" firstAttribute="leading" secondItem="gws-o1-e0p" secondAttribute="leading" constant="278" id="1N9-Es-AX7"/>
+                            <constraint firstItem="gws-o1-e0p" firstAttribute="bottom" secondItem="2fe-8g-rsU" secondAttribute="bottom" constant="546" id="3oF-bn-t9K"/>
+                            <constraint firstItem="gws-o1-e0p" firstAttribute="trailing" secondItem="2fe-8g-rsU" secondAttribute="trailing" constant="16" id="BtV-l9-OhE"/>
+                            <constraint firstItem="gws-o1-e0p" firstAttribute="bottom" secondItem="4ek-nd-aNQ" secondAttribute="bottom" constant="361" id="GTu-vG-m9t"/>
+                            <constraint firstItem="byy-1Z-LdT" firstAttribute="top" secondItem="4ek-nd-aNQ" secondAttribute="bottom" constant="81" id="HXW-OW-8bk"/>
+                            <constraint firstItem="v0x-eF-fvG" firstAttribute="leading" secondItem="gws-o1-e0p" secondAttribute="leading" constant="197" id="Tnf-Qy-n1Y"/>
+                            <constraint firstItem="gws-o1-e0p" firstAttribute="trailing" secondItem="v0x-eF-fvG" secondAttribute="trailing" constant="16" id="UsP-eP-ILx"/>
+                            <constraint firstItem="byy-1Z-LdT" firstAttribute="leading" secondItem="gws-o1-e0p" secondAttribute="leading" constant="16" id="ZRv-fR-yZO"/>
+                            <constraint firstItem="v0x-eF-fvG" firstAttribute="top" secondItem="2fe-8g-rsU" secondAttribute="bottom" constant="131" id="ZiL-ZT-zM0"/>
+                            <constraint firstItem="gws-o1-e0p" firstAttribute="trailing" secondItem="4ek-nd-aNQ" secondAttribute="trailing" constant="166" id="alN-dy-Pc6"/>
+                            <constraint firstItem="gws-o1-e0p" firstAttribute="trailing" secondItem="byy-1Z-LdT" secondAttribute="trailing" constant="115" id="b0t-BA-tDr"/>
+                            <constraint firstItem="2fe-8g-rsU" firstAttribute="top" secondItem="gws-o1-e0p" secondAttribute="top" constant="13" id="dG2-11-Fej"/>
+                            <constraint firstItem="4ek-nd-aNQ" firstAttribute="leading" secondItem="gws-o1-e0p" secondAttribute="leading" constant="16" id="eTV-3O-kji"/>
+                            <constraint firstItem="4ek-nd-aNQ" firstAttribute="top" secondItem="gws-o1-e0p" secondAttribute="top" constant="106" id="iiS-hU-W1O"/>
+                            <constraint firstItem="gws-o1-e0p" firstAttribute="bottom" secondItem="byy-1Z-LdT" secondAttribute="bottom" constant="43" id="s7x-xQ-TcT"/>
+                            <constraint firstItem="gws-o1-e0p" firstAttribute="bottom" secondItem="v0x-eF-fvG" secondAttribute="bottom" constant="253" id="uMH-Yv-u0R"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="gws-o1-e0p"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fFp-C0-7VR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-646" y="133"/>
+            <point key="canvasLocation" x="-647.20000000000005" y="132.68365817091455"/>
+        </scene>
+        <!--Spil View Controller-->
+        <scene sceneID="Jcb-Mv-r4B">
+            <objects>
+                <viewController id="hP3-Ub-ZXe" customClass="SpilViewController" customModule="MRMini" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qmO-XB-gZI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="coH-aw-hGU">
+                                <rect key="frame" x="48" y="328" width="52" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="magnetic1.png"/>
+                                <connections>
+                                    <action selector="forkAction:" destination="hP3-Ub-ZXe" eventType="touchUpInside" id="qDs-PO-18g"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lGA-Sf-5Sg">
+                                <rect key="frame" x="48" y="209" width="67" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="nonmagnetic1.png"/>
+                                <connections>
+                                    <action selector="appleAction:" destination="hP3-Ub-ZXe" eventType="touchUpInside" id="4V6-IQ-Lfm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VBp-R9-SYL">
+                                <rect key="frame" x="151" y="258" width="73" height="106"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="nonmagnetic3.png"/>
+                                <connections>
+                                    <action selector="bookAction:" destination="hP3-Ub-ZXe" eventType="touchUpInside" id="pD2-HM-Izz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4F8-oI-z1X">
+                                <rect key="frame" x="232" y="200" width="98" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="nonmagnetic2.png"/>
+                                <connections>
+                                    <action selector="tedAction:" destination="hP3-Ub-ZXe" eventType="touchUpInside" id="hnX-BI-jsB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lpW-PF-yka">
+                                <rect key="frame" x="260" y="315" width="57" height="78"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="magnetic3.png"/>
+                                <connections>
+                                    <action selector="scissorsAction:" destination="hP3-Ub-ZXe" eventType="touchUpInside" id="vJl-J3-oXs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="83C-O8-FSs">
+                                <rect key="frame" x="113" y="406" width="62" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="nonmagnetic4.png"/>
+                                <connections>
+                                    <action selector="milkAction:" destination="hP3-Ub-ZXe" eventType="touchUpInside" id="iUv-mh-ZxQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iBN-pg-GAU">
+                                <rect key="frame" x="152" y="160" width="58" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="magnetic2.png"/>
+                                <connections>
+                                    <action selector="medalAction:" destination="hP3-Ub-ZXe" eventType="touchUpInside" id="5ki-s9-WdC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CWp-xY-bfg">
+                                <rect key="frame" x="208" y="499" width="62" height="101"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="nonmagnetic5.png"/>
+                                <connections>
+                                    <action selector="iceCreemAction:" destination="hP3-Ub-ZXe" eventType="touchUpInside" id="iej-Fg-YTX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Lv-DF-hZf">
+                                <rect key="frame" x="196" y="590" width="30" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="plC-cx-Eit">
+                                <rect key="frame" x="245" y="431" width="57" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="magnetic5.png"/>
+                                <connections>
+                                    <action selector="screwAction:" destination="hP3-Ub-ZXe" eventType="touchUpInside" id="7Wg-Iv-yDE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jqk-Ci-Mkm">
+                                <rect key="frame" x="84" y="508" width="59" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="magnetic4.png"/>
+                                <connections>
+                                    <action selector="needleAction:" destination="hP3-Ub-ZXe" eventType="touchUpInside" id="ysg-3R-oIn"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Point:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sxn-8D-d4D">
+                                <rect key="frame" x="32" y="53" width="85" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EBS-fq-y2R">
+                                <rect key="frame" x="55" y="69" width="275" height="141"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gp-36-775">
+                                        <rect key="frame" x="8" y="87" width="93" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="Tilbage"/>
+                                        <connections>
+                                            <segue destination="OVP-tG-5n3" kind="show" id="5Hd-ib-5I5"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Du har vundet!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="McP-dI-XGV">
+                                        <rect key="frame" x="69" y="0.0" width="136" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nMA-lC-Ggq">
+                                        <rect key="frame" x="162" y="83" width="92" height="58"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="Spil igen"/>
+                                        <connections>
+                                            <action selector="resetAction:" destination="hP3-Ub-ZXe" eventType="touchUpInside" id="h3T-Oq-HEL"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.3708304288" green="0.78845531089999998" blue="0.75102701029999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="Zny-lL-iAe"/>
+                    </view>
+                    <connections>
+                        <outlet property="Apple" destination="lGA-Sf-5Sg" id="vwu-2U-R9r"/>
+                        <outlet property="Book" destination="VBp-R9-SYL" id="6Zl-T2-q1e"/>
+                        <outlet property="Fork" destination="coH-aw-hGU" id="ad8-Hb-C2o"/>
+                        <outlet property="IceCreem" destination="CWp-xY-bfg" id="dib-Cr-yKn"/>
+                        <outlet property="Medal" destination="iBN-pg-GAU" id="IcC-X5-6zn"/>
+                        <outlet property="Milk" destination="83C-O8-FSs" id="dMg-k3-GHV"/>
+                        <outlet property="Needle" destination="jqk-Ci-Mkm" id="E9J-Xt-hmF"/>
+                        <outlet property="Options" destination="EBS-fq-y2R" id="3UY-kt-aGM"/>
+                        <outlet property="Scissors" destination="lpW-PF-yka" id="XdG-0F-PCR"/>
+                        <outlet property="Screw" destination="plC-cx-Eit" id="4UO-vO-w55"/>
+                        <outlet property="Ted" destination="4F8-oI-z1X" id="Neo-0m-gHP"/>
+                        <outlet property="pointLabel" destination="sxn-8D-d4D" id="0Lk-Io-oAI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KR8-z9-T3m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-647.20000000000005" y="865.81709145427294"/>
+        </scene>
+        <!--Scan Med App View Controller-->
+        <scene sceneID="9sb-x6-3ZS">
+            <objects>
+                <viewController id="X4J-c0-cBN" customClass="ScanMedAppViewController" customModule="MRMini" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="00H-2j-7Oj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="man0.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZfG-S6-cQq">
+                                <rect key="frame" x="35" y="60" width="304" height="587"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8lk-I7-1Yp">
+                                <rect key="frame" x="16" y="20" width="60" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="tilbage.png"/>
+                                <connections>
+                                    <segue destination="23x-kC-Xch" kind="show" id="c86-oy-wHZ"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Try for at scanne" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="udo-LN-J7a">
+                                <rect key="frame" x="84" y="20" width="237" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ZfG-S6-cQq" firstAttribute="leading" secondItem="p80-7U-9QW" secondAttribute="leading" constant="35" id="5ry-hR-FCo"/>
+                            <constraint firstItem="ZfG-S6-cQq" firstAttribute="top" secondItem="p80-7U-9QW" secondAttribute="top" constant="40" id="NwR-Wi-VHy"/>
+                            <constraint firstItem="p80-7U-9QW" firstAttribute="trailing" secondItem="ZfG-S6-cQq" secondAttribute="trailing" constant="36" id="Zvd-68-XgC"/>
+                            <constraint firstItem="p80-7U-9QW" firstAttribute="bottom" secondItem="ZfG-S6-cQq" secondAttribute="bottom" constant="20" id="qnA-NA-N0g"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="p80-7U-9QW"/>
+                    </view>
+                    <connections>
+                        <outlet property="manImage" destination="ZfG-S6-cQq" id="BIe-PT-fzJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VwY-O4-AOy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-642.39999999999998" y="-1295.8020989505249"/>
+        </scene>
+        <!--Scan Menu View Controller-->
+        <scene sceneID="ZfV-cc-b1h">
+            <objects>
+                <viewController id="23x-kC-Xch" customClass="ScanMenuViewController" customModule="MRMini" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cai-Y6-h8R">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Gd-ei-oyA">
+                                <rect key="frame" x="27" y="136" width="178" height="172"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="knap6.png"/>
+                                <connections>
+                                    <action selector="scanMedAppAction:" destination="23x-kC-Xch" eventType="touchUpInside" id="vYn-QM-ow0"/>
+                                    <segue destination="X4J-c0-cBN" kind="show" id="ZGV-XL-bGV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="88O-N7-YoB">
+                                <rect key="frame" x="164" y="316" width="185" height="175"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="knap7.png"/>
+                                <connections>
+                                    <action selector="scanMedLeg:" destination="23x-kC-Xch" eventType="touchUpInside" id="aUh-Qj-7fr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7iE-Ys-mNa">
+                                <rect key="frame" x="16" y="20" width="60" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="tilbage.png"/>
+                                <connections>
+                                    <segue destination="OVP-tG-5n3" kind="show" id="OzB-Oz-8NU"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Scan med app eller Legetøj" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="KTS-SE-2FE">
+                                <rect key="frame" x="97" y="20" width="209" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.3708304288" green="0.78845531089999998" blue="0.75102701029999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.3708304288" green="0.78845531089999998" blue="0.75102701029999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="Q4a-OI-dt6"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n35-IN-2GQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-647.20000000000005" y="-605.84707646176912"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="C9o-dI-BkZ">
+            <objects>
+                <viewController id="LAE-Os-baq" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gDT-XW-jom">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Denne app er lavet af:                                                  Mehdi Akil Al-Alak        " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="g8g-Nq-rIx">
+                                <rect key="frame" x="0.0" y="87" width="233" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.3708304288" green="0.78845531089999998" blue="0.75102701029999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.3708304288" green="0.78845531089999998" blue="0.75102701029999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMJ-Tr-zV8">
+                                <rect key="frame" x="16" y="20" width="60" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="tilbage.png"/>
+                                <connections>
+                                    <segue destination="OVP-tG-5n3" kind="show" id="epi-bV-1Ys"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.3708304288" green="0.78845531089999998" blue="0.75102701029999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="tmb-kL-9In"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KiK-i4-9uE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="437.60000000000002" y="-225.33733133433284"/>
+        </scene>
+        <!--Info View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MRMini" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="InfoViewController" customModule="MRMini" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XeD-Iq-S3k">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="55" width="375" height="612"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oS3-Im-jhl">
+                                <rect key="frame" x="16" y="6" width="60" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="tilbage.png"/>
+                                <connections>
+                                    <segue destination="OVP-tG-5n3" kind="show" id="7CU-wD-cn0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="XeD-Iq-S3k" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="2I1-C3-TcJ"/>
-                            <constraint firstItem="XeD-Iq-S3k" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="5qb-hq-ZO9"/>
-                            <constraint firstItem="XeD-Iq-S3k" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qfN-Lw-fXp"/>
-                            <constraint firstItem="XeD-Iq-S3k" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="tfQ-s0-Orm"/>
+                            <constraint firstItem="XeD-Iq-S3k" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="JA3-dY-sFg"/>
+                            <constraint firstItem="XeD-Iq-S3k" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="evo-T1-nW2"/>
+                            <constraint firstItem="XeD-Iq-S3k" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="jw7-6O-4oL"/>
+                            <constraint firstItem="XeD-Iq-S3k" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="xrM-dI-Qx0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -64,7 +397,31 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+            <point key="canvasLocation" x="437.60000000000002" y="493.40329835082463"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="knap0.png" width="150" height="149"/>
+        <image name="knap1.png" width="210" height="210"/>
+        <image name="knap2.png" width="144" height="143"/>
+        <image name="knap3.png" width="279" height="279"/>
+        <image name="knap6.png" width="178" height="178"/>
+        <image name="knap7.png" width="172" height="172"/>
+        <image name="magnetic1.png" width="100" height="96"/>
+        <image name="magnetic2.png" width="300" height="398"/>
+        <image name="magnetic3.png" width="183" height="275"/>
+        <image name="magnetic4.png" width="150" height="150"/>
+        <image name="magnetic5.png" width="250" height="208"/>
+        <image name="man0.png" width="249" height="732"/>
+        <image name="nonmagnetic1.png" width="100" height="113"/>
+        <image name="nonmagnetic2.png" width="150" height="101"/>
+        <image name="nonmagnetic3.png" width="200" height="200"/>
+        <image name="nonmagnetic4.png" width="206" height="244"/>
+        <image name="nonmagnetic5.png" width="194" height="259"/>
+        <image name="tilbage.png" width="720" height="720"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="xD1-Bi-sIZ"/>
+        <segue reference="OzB-Oz-8NU"/>
+    </inferredMetricsTieBreakers>
 </document>

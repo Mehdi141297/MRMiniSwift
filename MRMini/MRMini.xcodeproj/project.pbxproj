@@ -7,8 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF0B6A8420A2637C000A7CB1 /* SpilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0B6A8320A2637C000A7CB1 /* SpilViewController.swift */; };
+		CF0B6A8620A26397000A7CB1 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0B6A8520A26397000A7CB1 /* MenuViewController.swift */; };
+		CFAF0538209D18D900271774 /* knap0.png in Resources */ = {isa = PBXBuildFile; fileRef = CFAF0535209D18D900271774 /* knap0.png */; };
+		CFAF0539209D18D900271774 /* knap1.png in Resources */ = {isa = PBXBuildFile; fileRef = CFAF0536209D18D900271774 /* knap1.png */; };
+		CFAF053A209D18D900271774 /* knap2.png in Resources */ = {isa = PBXBuildFile; fileRef = CFAF0537209D18D900271774 /* knap2.png */; };
+		CFAF0540209D18F200271774 /* knap6.png in Resources */ = {isa = PBXBuildFile; fileRef = CFAF053B209D18F100271774 /* knap6.png */; };
+		CFAF0541209D18F200271774 /* knap4.png in Resources */ = {isa = PBXBuildFile; fileRef = CFAF053C209D18F100271774 /* knap4.png */; };
+		CFAF0542209D18F200271774 /* knap3.png in Resources */ = {isa = PBXBuildFile; fileRef = CFAF053D209D18F200271774 /* knap3.png */; };
+		CFAF0543209D18F200271774 /* knap7.png in Resources */ = {isa = PBXBuildFile; fileRef = CFAF053E209D18F200271774 /* knap7.png */; };
+		CFAF0544209D18F200271774 /* knap5.png in Resources */ = {isa = PBXBuildFile; fileRef = CFAF053F209D18F200271774 /* knap5.png */; };
+		CFAF0549209D198100271774 /* magnetic3.png in Resources */ = {isa = PBXBuildFile; fileRef = CFAF0545209D198100271774 /* magnetic3.png */; };
+		CFAF054A209D198100271774 /* magnetic4.png in Resources */ = {isa = PBXBuildFile; fileRef = CFAF0546209D198100271774 /* magnetic4.png */; };
+		CFAF054B209D198100271774 /* magnetic2.png in Resources */ = {isa = PBXBuildFile; fileRef = CFAF0547209D198100271774 /* magnetic2.png */; };
+		CFAF054C209D198100271774 /* magnetic5.png in Resources */ = {isa = PBXBuildFile; fileRef = CFAF0548209D198100271774 /* magnetic5.png */; };
+		CFAF054E209D198A00271774 /* magnetic1.png in Resources */ = {isa = PBXBuildFile; fileRef = CFAF054D209D198A00271774 /* magnetic1.png */; };
+		CFAF0551209D199D00271774 /* nonmagnetic2.png in Resources */ = {isa = PBXBuildFile; fileRef = CFAF054F209D199D00271774 /* nonmagnetic2.png */; };
+		CFAF0552209D199D00271774 /* nonmagnetic1.png in Resources */ = {isa = PBXBuildFile; fileRef = CFAF0550209D199D00271774 /* nonmagnetic1.png */; };
+		CFAF0556209D19A600271774 /* nonmagnetic4.png in Resources */ = {isa = PBXBuildFile; fileRef = CFAF0553209D19A600271774 /* nonmagnetic4.png */; };
+		CFAF0557209D19A600271774 /* nonmagnetic5.png in Resources */ = {isa = PBXBuildFile; fileRef = CFAF0554209D19A600271774 /* nonmagnetic5.png */; };
+		CFAF0558209D19A600271774 /* nonmagnetic3.png in Resources */ = {isa = PBXBuildFile; fileRef = CFAF0555209D19A600271774 /* nonmagnetic3.png */; };
+		CFB73C5F20A3401900BB1118 /* ScanMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB73C5E20A3401900BB1118 /* ScanMenuViewController.swift */; };
+		CFB73C6120A340A700BB1118 /* ScanMedAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB73C6020A340A700BB1118 /* ScanMedAppViewController.swift */; };
+		CFB73C6420A3417200BB1118 /* man0.png in Resources */ = {isa = PBXBuildFile; fileRef = CFB73C6220A3417100BB1118 /* man0.png */; };
+		CFB73C6520A3417200BB1118 /* man1.png in Resources */ = {isa = PBXBuildFile; fileRef = CFB73C6320A3417200BB1118 /* man1.png */; };
+		CFB73C6720A34D9100BB1118 /* tilbage.png in Resources */ = {isa = PBXBuildFile; fileRef = CFB73C6620A34D9000BB1118 /* tilbage.png */; };
+		CFB73C6920A352B600BB1118 /* buttonclick.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CFB73C6820A352B600BB1118 /* buttonclick.mp3 */; };
+		CFB73C6B20A356BE00BB1118 /* chime_bell_ding.wav in Resources */ = {isa = PBXBuildFile; fileRef = CFB73C6A20A356BD00BB1118 /* chime_bell_ding.wav */; };
+		CFB73C6D20A3579900BB1118 /* mri_scan_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CFB73C6C20A3579800BB1118 /* mri_scan_sound.mp3 */; };
 		CFC4E25020973FCC009943C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC4E24F20973FCC009943C5 /* AppDelegate.swift */; };
-		CFC4E25220973FCC009943C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC4E25120973FCC009943C5 /* ViewController.swift */; };
+		CFC4E25220973FCC009943C5 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC4E25120973FCC009943C5 /* InfoViewController.swift */; };
 		CFC4E25520973FCC009943C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFC4E25320973FCC009943C5 /* Main.storyboard */; };
 		CFC4E25720973FCC009943C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFC4E25620973FCC009943C5 /* Assets.xcassets */; };
 		CFC4E25A20973FCC009943C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFC4E25820973FCC009943C5 /* LaunchScreen.storyboard */; };
@@ -34,9 +62,37 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CF0B6A8320A2637C000A7CB1 /* SpilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpilViewController.swift; sourceTree = "<group>"; };
+		CF0B6A8520A26397000A7CB1 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		CFAF0535209D18D900271774 /* knap0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = knap0.png; sourceTree = "<group>"; };
+		CFAF0536209D18D900271774 /* knap1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = knap1.png; sourceTree = "<group>"; };
+		CFAF0537209D18D900271774 /* knap2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = knap2.png; sourceTree = "<group>"; };
+		CFAF053B209D18F100271774 /* knap6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = knap6.png; sourceTree = "<group>"; };
+		CFAF053C209D18F100271774 /* knap4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = knap4.png; sourceTree = "<group>"; };
+		CFAF053D209D18F200271774 /* knap3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = knap3.png; sourceTree = "<group>"; };
+		CFAF053E209D18F200271774 /* knap7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = knap7.png; sourceTree = "<group>"; };
+		CFAF053F209D18F200271774 /* knap5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = knap5.png; sourceTree = "<group>"; };
+		CFAF0545209D198100271774 /* magnetic3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = magnetic3.png; sourceTree = "<group>"; };
+		CFAF0546209D198100271774 /* magnetic4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = magnetic4.png; sourceTree = "<group>"; };
+		CFAF0547209D198100271774 /* magnetic2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = magnetic2.png; sourceTree = "<group>"; };
+		CFAF0548209D198100271774 /* magnetic5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = magnetic5.png; sourceTree = "<group>"; };
+		CFAF054D209D198A00271774 /* magnetic1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = magnetic1.png; sourceTree = "<group>"; };
+		CFAF054F209D199D00271774 /* nonmagnetic2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nonmagnetic2.png; sourceTree = "<group>"; };
+		CFAF0550209D199D00271774 /* nonmagnetic1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nonmagnetic1.png; sourceTree = "<group>"; };
+		CFAF0553209D19A600271774 /* nonmagnetic4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nonmagnetic4.png; sourceTree = "<group>"; };
+		CFAF0554209D19A600271774 /* nonmagnetic5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nonmagnetic5.png; sourceTree = "<group>"; };
+		CFAF0555209D19A600271774 /* nonmagnetic3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nonmagnetic3.png; sourceTree = "<group>"; };
+		CFB73C5E20A3401900BB1118 /* ScanMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanMenuViewController.swift; sourceTree = "<group>"; };
+		CFB73C6020A340A700BB1118 /* ScanMedAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanMedAppViewController.swift; sourceTree = "<group>"; };
+		CFB73C6220A3417100BB1118 /* man0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = man0.png; sourceTree = "<group>"; };
+		CFB73C6320A3417200BB1118 /* man1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = man1.png; sourceTree = "<group>"; };
+		CFB73C6620A34D9000BB1118 /* tilbage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tilbage.png; sourceTree = "<group>"; };
+		CFB73C6820A352B600BB1118 /* buttonclick.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = buttonclick.mp3; sourceTree = "<group>"; };
+		CFB73C6A20A356BD00BB1118 /* chime_bell_ding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = chime_bell_ding.wav; sourceTree = "<group>"; };
+		CFB73C6C20A3579800BB1118 /* mri_scan_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mri_scan_sound.mp3; sourceTree = "<group>"; };
 		CFC4E24C20973FCC009943C5 /* MRMini.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MRMini.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFC4E24F20973FCC009943C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CFC4E25120973FCC009943C5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CFC4E25120973FCC009943C5 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		CFC4E25420973FCC009943C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CFC4E25620973FCC009943C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFC4E25920973FCC009943C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -74,6 +130,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF0B6A8020A2234F000A7CB1 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CFB73C6620A34D9000BB1118 /* tilbage.png */,
+				CFB73C6220A3417100BB1118 /* man0.png */,
+				CFB73C6320A3417200BB1118 /* man1.png */,
+				CFAF0536209D18D900271774 /* knap1.png */,
+				CFAF0535209D18D900271774 /* knap0.png */,
+				CFAF0537209D18D900271774 /* knap2.png */,
+				CFAF053D209D18F200271774 /* knap3.png */,
+				CFAF053C209D18F100271774 /* knap4.png */,
+				CFAF053F209D18F200271774 /* knap5.png */,
+				CFAF053B209D18F100271774 /* knap6.png */,
+				CFAF053E209D18F200271774 /* knap7.png */,
+				CFAF0547209D198100271774 /* magnetic2.png */,
+				CFAF0545209D198100271774 /* magnetic3.png */,
+				CFAF0546209D198100271774 /* magnetic4.png */,
+				CFAF0548209D198100271774 /* magnetic5.png */,
+				CFAF054D209D198A00271774 /* magnetic1.png */,
+				CFAF0550209D199D00271774 /* nonmagnetic1.png */,
+				CFAF054F209D199D00271774 /* nonmagnetic2.png */,
+				CFAF0555209D19A600271774 /* nonmagnetic3.png */,
+				CFAF0553209D19A600271774 /* nonmagnetic4.png */,
+				CFAF0554209D19A600271774 /* nonmagnetic5.png */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		CFC4E24320973FCC009943C5 = {
 			isa = PBXGroup;
 			children = (
@@ -98,9 +182,17 @@
 			isa = PBXGroup;
 			children = (
 				CFC4E24F20973FCC009943C5 /* AppDelegate.swift */,
-				CFC4E25120973FCC009943C5 /* ViewController.swift */,
+				CF0B6A8520A26397000A7CB1 /* MenuViewController.swift */,
+				CFC4E25120973FCC009943C5 /* InfoViewController.swift */,
+				CF0B6A8320A2637C000A7CB1 /* SpilViewController.swift */,
+				CFB73C5E20A3401900BB1118 /* ScanMenuViewController.swift */,
+				CFB73C6020A340A700BB1118 /* ScanMedAppViewController.swift */,
 				CFC4E25320973FCC009943C5 /* Main.storyboard */,
 				CFC4E25620973FCC009943C5 /* Assets.xcassets */,
+				CFB73C6820A352B600BB1118 /* buttonclick.mp3 */,
+				CFB73C6A20A356BD00BB1118 /* chime_bell_ding.wav */,
+				CFB73C6C20A3579800BB1118 /* mri_scan_sound.mp3 */,
+				CF0B6A8020A2234F000A7CB1 /* UI */,
 				CFC4E25820973FCC009943C5 /* LaunchScreen.storyboard */,
 				CFC4E25B20973FCC009943C5 /* Info.plist */,
 			);
@@ -230,8 +322,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFC4E25A20973FCC009943C5 /* LaunchScreen.storyboard in Resources */,
+				CFB73C6420A3417200BB1118 /* man0.png in Resources */,
 				CFC4E25720973FCC009943C5 /* Assets.xcassets in Resources */,
+				CFAF0541209D18F200271774 /* knap4.png in Resources */,
+				CFAF0539209D18D900271774 /* knap1.png in Resources */,
+				CFAF0542209D18F200271774 /* knap3.png in Resources */,
+				CFAF054C209D198100271774 /* magnetic5.png in Resources */,
+				CFB73C6D20A3579900BB1118 /* mri_scan_sound.mp3 in Resources */,
+				CFAF0543209D18F200271774 /* knap7.png in Resources */,
+				CFAF054B209D198100271774 /* magnetic2.png in Resources */,
+				CFB73C6920A352B600BB1118 /* buttonclick.mp3 in Resources */,
+				CFAF054A209D198100271774 /* magnetic4.png in Resources */,
+				CFAF054E209D198A00271774 /* magnetic1.png in Resources */,
+				CFAF0538209D18D900271774 /* knap0.png in Resources */,
+				CFAF053A209D18D900271774 /* knap2.png in Resources */,
+				CFB73C6B20A356BE00BB1118 /* chime_bell_ding.wav in Resources */,
+				CFAF0544209D18F200271774 /* knap5.png in Resources */,
+				CFAF0556209D19A600271774 /* nonmagnetic4.png in Resources */,
+				CFAF0552209D199D00271774 /* nonmagnetic1.png in Resources */,
+				CFB73C6520A3417200BB1118 /* man1.png in Resources */,
+				CFAF0540209D18F200271774 /* knap6.png in Resources */,
 				CFC4E25520973FCC009943C5 /* Main.storyboard in Resources */,
+				CFAF0551209D199D00271774 /* nonmagnetic2.png in Resources */,
+				CFAF0549209D198100271774 /* magnetic3.png in Resources */,
+				CFAF0558209D19A600271774 /* nonmagnetic3.png in Resources */,
+				CFB73C6720A34D9100BB1118 /* tilbage.png in Resources */,
+				CFAF0557209D19A600271774 /* nonmagnetic5.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +372,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFC4E25220973FCC009943C5 /* ViewController.swift in Sources */,
+				CFC4E25220973FCC009943C5 /* InfoViewController.swift in Sources */,
+				CF0B6A8420A2637C000A7CB1 /* SpilViewController.swift in Sources */,
 				CFC4E25020973FCC009943C5 /* AppDelegate.swift in Sources */,
+				CF0B6A8620A26397000A7CB1 /* MenuViewController.swift in Sources */,
+				CFB73C6120A340A700BB1118 /* ScanMedAppViewController.swift in Sources */,
+				CFB73C5F20A3401900BB1118 /* ScanMenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,7 +551,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ST86465J9A;
 				INFOPLIST_FILE = MRMini/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -448,7 +570,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ST86465J9A;
 				INFOPLIST_FILE = MRMini/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
